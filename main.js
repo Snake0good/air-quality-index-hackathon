@@ -12,7 +12,7 @@ function getAirQuality() {
     let stateInput = document.querySelector('#state').value.trim()
     const cityInput = document.querySelector('#city').value.trim()
 
-    const URL = `http://api.airvisual.com/v2/city?city=${cityInput}&state=${stateInput}&country=USA&key=${API_KEY}`
+    const URL = `https://api.airvisual.com/v2/city?city=${cityInput}&state=${stateInput}&country=USA&key=${API_KEY}`
 
     if (!stateInput || !cityInput) {
         alert('Please enter a valid State and City')
