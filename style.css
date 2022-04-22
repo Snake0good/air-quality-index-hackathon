@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1048%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(135%2c 191%2c 160%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c113 C 96%2c96.2 288%2c23.2 480%2c29 C 672%2c34.8 768%2c140.6 960%2c142 C 1152%2c143.4 1344%2c57.2 1440%2c36L1440 560L0 560z' fill='rgba(40%2c 150%2c 122%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c288 C 41.2%2c270.8 123.6%2c198.4 206%2c202 C 288.4%2c205.6 329.6%2c308.8 412%2c306 C 494.4%2c303.2 535.6%2c181.4 618%2c188 C 700.4%2c194.6 741.6%2c338.4 824%2c339 C 906.4%2c339.6 947.6%2c189.6 1030%2c191 C 1112.4%2c192.4 1154%2c339 1236%2c346 C 1318%2c353 1399.2%2c250 1440%2c226L1440 560L0 560z' fill='rgba(24%2c 126%2c 119%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c504 C 57.6%2c486.8 172.8%2c417.2 288%2c418 C 403.2%2c418.8 460.8%2c511 576%2c508 C 691.2%2c505 748.8%2c399.2 864%2c403 C 979.2%2c406.8 1036.8%2c521.8 1152%2c527 C 1267.2%2c532.2 1382.4%2c448.6 1440%2c429L1440 560L0 560z' fill='rgba(135%2c 191%2c 160%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1048'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+}
+
+
+#aq-data-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aq-data-div>div {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    width: 200px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.aqi, .temp {
+    font-size: 2rem;
+}
+
+.dark-red {
+    color: #893F97;
+}
+.red {
+    color: #FB0E03;
+}
+.orange {
+    color: #FB7E05;
+}
+.yellow {
+    color: #FDFF11;
+}
+.green {
+    color: #00E307;
+}
+
+
+.temp-pic {
+    font-size: 3rem;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    bottom: 90px;
+    right: 30px;
+}
+
+#city-state-input {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#city-state-input>div {
+    width: 260px;
+    text-align: right;
+    border-radius: 12px;
+    margin: 5px;
+    background-color: azure;
+}
+
+#city, #state {
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    width: 200px;
+}
+
+#city:focus, #state:focus {
+    outline: none;
+}
+
+#aq-btn {
+    border: none;
+    background-color: rgb(214, 252, 252);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 6px;
+    margin-top: 15px;
+    transition: 0.3s all;
+}
+
+#aq-btn:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+    background-color: black;
+    color: white;
+}
+
+.aq-temp {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.aqi-info {
+    width: 100%;
+}
+img {
+    width: 95%;
+}
+
+#aq-data-div h1 {
+    font-size: 1.5rem;
+}
